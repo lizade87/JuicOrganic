@@ -40,7 +40,18 @@ body {
     font-size: 1.1rem;
     font-weight: bold;
 }
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+}
 
+.nav-links a.active {
+    border: 5px solid black;
+    border-radius: 4px; /* Optional: rounds the corners */
+}
 .navbar a:hover {
     color: brown;
 }
