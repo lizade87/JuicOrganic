@@ -8,12 +8,16 @@
 
 </head>
 <body>
+<div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="JuicOrganic Logo">
+    </a>
+</div>
 <nav class="navbar">
-    <div class="logo">
-        <a href="index.html">
-            <img src="logo.png" alt="JuicOrganic Logo">
-        </a>
-    </div>
+    <!-- Burger icon -->
+    <button class="burger" aria-label="Toggle navigation">
+        ☰
+    </button>
     <ul class="nav-links">
         <li><a href="index.html">Om JuicOrganic</a></li>
         <li><a href="Mission.html">Mission</a></li>
@@ -22,24 +26,28 @@
 </nav>
 
 <main class="container">
-<h1>STATUS</h1>
+    <h1>STATUS</h1>
+    <section class="status-intro">
+        <p>En karton JuicOrganic koster 20DKK. 15% af det doneres til TheOceanCleanUp, som svarer til ca. 9 plastikflasker fjernet fra havet.
+        </p>
+    </section>
 <div class="label-row">
     <div class="label">Juice kartoner solgt</div>
     <div class="spacer"></div>
     <div class="label">Plastikflasker fjernet</div>
 </div>
 
-<div class="counter-row">
-    <img src="carton.png" alt="Juice Carton" class="icon">
-
-    <div class="equation">
-        <span id="cartonCounter">00000</span>
-        <span class="multiply">x 9 =</span>
-        <span id="bottleCounter">00000</span>
+    <div class="counter-wrapper">
+        <div class="counter-row">
+            <img src="carton.png" alt="Juice Carton" class="icon">
+            <img src="plasticbottle.png" alt="Plastic Bottle" class="icon2">
+        </div>
+        <div class="equation">
+            <span id="cartonCounter">00000</span>
+            <span class="multiply">x 9 =</span>
+            <span id="bottleCounter">00000</span>
+        </div>
     </div>
-
-    <img src="plasticbottle.png" alt="Plastic Bottle" class="icon2">
-</div>
 </main>
 
 <script src="status.js"></script>

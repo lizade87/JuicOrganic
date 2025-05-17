@@ -2,61 +2,68 @@
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-body {
     background-image: linear-gradient( to bottom, #ffffff 0%, #ffffff 50%, #B0E7EA 100%);
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem 2rem;
-}
+ * {
+     box-sizing: border-box;
+ }
+ .navbar {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 1rem 2rem;
+ }
+ .burger {
+     display: none;
+     font-size: 2rem;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
 
-.logo {
-    margin-right: 4rem; /* space between logo and nav links */
-}
+ .logo {
+     margin-right: 4rem; /* space between logo and nav links */
+ }
 
-.logo img {
-    height: 3rem; /* scalable logo size */
-    width: auto;
-}
+ .logo img {
+     height: 3rem; /* scalable logo size */
+     width: auto;
+     margin-left:2rem;
+     margin-top: 2rem;
+ }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 10rem; /* space between menu links */
-    padding: 0;
-    margin-left: 10rem;
-}
+ .nav-links {
+     list-style: none;
+     display: flex;
+     gap: 10rem; /* space between menu links */
+     padding: 0;
+ }
 
+ .navbar a {
+     color: black;
+     text-decoration: none;
+     font-family: "Inter", sans-serif;
+     text-transform: uppercase;
+     font-size: 1.1rem;
+     font-weight: bold;
+ }
  .nav-links a {
      text-decoration: none;
      color: black;
      padding: 10px;
      display: inline-block;
      border: none;
+     font-size: 1.6rem;
  }
 
  .nav-links a.active {
      border: 5px solid black;
      border-radius: 4px; /* Optional: rounds the corners */
  }
-.navbar a {
-    color: black;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    color: brown;
-}
-
+ .navbar a:hover {
+     color: brown;
+ }
 
 h1 {
     color:black;
@@ -67,9 +74,10 @@ h1 {
 
 .mission-intro {
     text-align: left;
-    margin:0 20rem;
     font-size: 1.8rem;
     font-family: "Inter", sans-serif;
+    margin-left: 6rem;
+    margin-right: 5rem;
 }
 
  .fact-row {
@@ -78,7 +86,7 @@ h1 {
      justify-content: center;
      gap: 2rem;
      flex-wrap: wrap; /* makes it responsive on smaller screens */
-     margin: 2rem 0;
+     margin-top: 2rem;
  }
 
  .fact-image {
@@ -91,12 +99,12 @@ h1 {
      max-width: 400px;
      font-family: sans-serif;
      color: #333;
-     margin-top: 4rem;
+     margin-top: 3rem;
      margin-left: 3rem;
  }
 
  .big-label {
-     font-size: 1.1rem;
+     font-size: 1.9rem;
      font-weight: bold;
      font-style: italic;
      margin-bottom: 0.5rem;
@@ -104,16 +112,21 @@ h1 {
 
  .small-label {
      text-align: left;
+     font-size: 1.2rem;
  }
 
  .fact-detail {
-     font-size: 0.95rem;
+     font-size: 1rem;
      line-height: 1.4;
      margin: 0;
  }
 
+ p.fact-detail {
+     font-size: 1.3rem;
+ }
+
  .fact-row .reference {
-     font-size: 0.8rem;
+     font-size: 1.1rem;
      color: #666;
  }
 
@@ -121,53 +134,72 @@ h1 {
     font-size: 2rem;
     font-style: italic;
     text-align: center;
-    margin: 2rem 0;
+    margin:0;
+}
+.quote-section p {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
 }
  .quote-section .reference {
      font-size: 1.8rem; /* or any size you want */
      color:#666;
  }
 
-.image-caption-row {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap:center;
-    margin: 2rem 13rem;
-    margin-left: 18rem;
-    font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
-}
-
-.image-caption-row .reference {
-font-size: 0.8rem;
-    color:#666;A
-}
-
-.image-caption-pair {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:45%;
-}
-
-.image-caption-pair img {
-    max-width: 100%;
-    height: 60%;
-    }
-
- .image-caption-row .image-caption-pair:first-child p {
-     text-align: left;
-     align-self: flex-start;
-     width: 100%;
+ .image-caption-row {
+     display: flex;
+     justify-content: center;
+     gap: 2rem; /* Reduced space between columns */
+     margin: 2rem auto;
+     font-family: "Inter", sans-serif;
+     font-size: 0.9rem;
+     flex-wrap: wrap;
  }
 
+ .image-caption-row .image-caption-pair .small-label .reference {
+     font-size: 1.1rem;
+ }
 
-.mission-continue {
-    text-align: left;
-    margin:0 20rem;
-    font-size: 1.8rem;
-    font-family: "Inter", sans-serif;
+ .image-caption-pair {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 600px; /* match image size */
+     width: 100%;      /* allow responsiveness */
+     margin: 0;
+     padding: 0;
+ }
+
+ .image-caption-pair img {
+     max-width: 100%;
+     height: block;
+ }
+
+ .plasticplant {
+     width: 100%;
+     max-width: 600px;
+     height: 400px;             /* Force height to match 2nd image */
+     object-fit: cover;
+     object-position: top;
+     display: block;
+ }
+
+ .image-caption-pair p {
+     width: 100%;            /* match image width */
+     margin-bottom: 0.5rem;  /* slight spacing before image */
+     text-align: left;
+ }
+
+ .image-caption-row .reference {
+     font-size: 0.8rem;
+     color: #666;
+ }
+
+ .mission-continue {
+     text-align: left;
+     font-size: 1.8rem;
+     font-family: "Inter", sans-serif;
+     margin-left: 6.5rem;
+     margin-right: 5.5rem;
 }
 .cta-text {
     font-weight: bold;
@@ -175,6 +207,11 @@ font-size: 0.8rem;
     margin-bottom: 1rem;
     text-align: center;
     font-family: "Inter", sans-serif;
+}
+
+h2.cta-text {
+    margin-top:4rem;
+    margin-bottom: 3rem;
 }
 
  .status-button {
@@ -208,8 +245,76 @@ font-size: 0.8rem;
  }
 
  @media (max-width: 768px) {
-     .counter-container {
+     .logo {
+         margin: 2rem 0rem 0rem 2rem; /* center logo and add spacing below if needed */
+         display: flex;
+         justify-content: left;
+     }
+
+     .logo img {
+         height: 2rem; /* slightly smaller logo on mobile */
+         margin:0;
+     }
+
+     .burger {
+         display: block;
+         position: absolute;
+         right: 2rem;
+         top: 1.5rem;
+         z-index: 2;
+     }
+
+     .nav-links {
+         display: none;
          flex-direction: column;
+         background-color: white;
+         position: absolute;
+         top: 4rem;
+         right: 2rem;
+         width: max-content;
+         min-width: 160px;
+         padding: 0.3rem 0;
+         z-index: 1;
+         gap:0;
+     }
+
+     .nav-links.open {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         position: 0%;
+         top: 4rem; /* Adjust to your burger icon */
+         right: 2rem;
+         width: max-content;
+         min-width: 160px;
+         padding: 0.3rem 0;
+         margin: 0;
+         background-color: white;
+         z-index: 10;
+     }
+
+     .nav-links li {
+         padding: 0;
+         margin: 0;
+     }
+     .nav-links a {
+         font-size: 1rem;              /* Smaller font */
+         font-weight: normal;          /* Not bold */
+         text-transform: none;         /* Remove all-caps */
+         color: black;
+         padding: 0.5rem 1rem;
+         display: block;
+         border: none !important;      /* Remove black box */
+         width: 100%;
+         font-family: system-ui, sans-serif; /* Optional: cleaner font on mobile */
+     }
+     /* Optional: hover effect for better UX */
+     .nav-links a:hover {
+         background-color: #f2f2f2;
+         color: brown;
+     }
+     .nav-links a.active {
+         border: none !important;
      }
 
      .icon {
@@ -220,4 +325,138 @@ font-size: 0.8rem;
          font-size: 1.2rem;
          text-align: center;
      }
+     .mission-intro {
+         margin: 0 1rem;
+     }
+
+     h1 {
+         font-size: 1.2rem;
+         text-align: center;
+         }
+     p {
+         font-size: 1rem;
+         margin:1rem;
+     }
+
+     .quote-section .reference {
+         font-size: 0.8rem;
+     }
+
+     .image-crop-container {
+         width: auto;
+         height: 150px; /* controls visible height */
+         overflow: hidden;
+         position: relative;
+     }
+
+     .image-crop-container img {
+         width: auto;
+         height: 200px; /* taller than container, enables cropping */
+         object-fit: cover;
+         object-position: center 10%; /* crop a bit more from bottom */
+         transform: translateY(-8%);
+     }
+
+     .fact-row{
+         margin: 1rem 0;
+         gap:0;
+     }
+     .fact-text {
+         margin:0rem 1rem;
+     }
+     .fact-detail {
+         padding-left: 2rem;
+     }
+.big-label {
+    text-align: center;
+}
+     .image-caption-row {
+             flex-direction: column;
+             gap: 0.5rem;
+             align-items: center;
+             display: flex;
+             justify-content: center;
+             width: 100%;
+             margin: 0 auto; /* center content */
+             padding: 0 2rem; /* safe padding instead of margin */
+             box-sizing: border-box;
+         }
+
+         .image-caption-pair {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             width: 100%;
+             max-width: 400px; /* prevent overflow */
+             box-sizing: border-box;
+         }
+
+         .plasticplant,
+         .plasticinwater {
+             width: 100%;
+             max-width: 100%;
+             display: block;
+             height:auto;
+         }
+
+         .plasticinwater {
+             object-fit: cover;
+             object-position: center;
+         }
+
+     .image-caption-pair {
+         max-height: 500px; /* set to match the taller content */
+     }
+
+         p .small-label {
+             text-align: left;
+             margin-bottom: 0.5rem;
+             width: 100%; /* full width of container */
+             max-width: 100%; /* prevent overflow */
+         }
+
+         .big-label {
+             font-size: 1rem;
+         }
+         p.fact-detail {
+             font-size: 0.9rem;
+             padding:0;
+             margin:1rem;
+         }
+
+         .fact-row .reference {
+             font-size: 0.8rem;
+         }
+.quote-section {
+    margin: 1rem;
+}
+.quote-section p {
+    margin:0;
+}
+
+.image-caption-pair p {
+    font-size: 0.9rem;
+}
+
+     .image-caption-row .image-caption-pair .small-label .reference {
+         font-size: 0.8rem;
+     }
+
+.mission-continue {
+    margin: 0 1rem;
+}
+h2.cta-text {
+    font-size: 1.1rem;
+    margin:2rem 2rem 0rem 1rem;
+}
+     .status-button {
+         display: inline-block;
+         transform: scale(0.6);
+         transform-origin: center; /* adjust if needed */
+     }
+     .status-link{
+         margin-bottom:1rem;
+         margin-top:1rem;
+     }
+
  }

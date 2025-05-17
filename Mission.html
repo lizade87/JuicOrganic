@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="logo">
+    <a href="index.html">
+        <img src="logo.png" alt="JuicOrganic Logo">
+    </a>
+</div>
 <nav class="navbar">
-    <div class="logo">
-        <a href="index.html">
-            <img src="logo.png" alt="JuicOrganic Logo">
-        </a>
-    </div>
+    <!-- Burger icon -->
+    <button class="burger" aria-label="Toggle navigation">
+        ☰
+    </button>
     <ul class="nav-links">
         <li><a href="index.html">Om JuicOrganic</a></li>
         <li><a href="Mission.html" class="active">Mission</a></li>
@@ -26,47 +30,50 @@
     <!-- Mission text -->
     <section class="mission-intro">
         <h1>Mission</h1>
-        <p>Hos JuicOrganic tror vi på, at vores produkt ikke bare skal smage godt – det skal også gøre godt. Derfor har vi valgt at støtte konkrete løsninger på verdens miljøproblemer.
+        <p>Hos JuicOrganic tror vi på, at vores produkt ikke bare skal smage godt – det skal også gøre godt.
+            Derfor har vi valgt at støtte konkrete løsninger på verdens miljøproblemer.</p>
 
-            Vi har valgt den hollandske non-profit organisation The Ocean Cleanup som samarbejdspartner, fordi deres arbejde er konkret, målbart og visionært. De udvikler avanceret teknologi til at fjerne plastik fra verdenshavene – og gør det i stor skala.
-
-
-
-        </p>
+            <p>Vi har valgt den hollandske non-profit organisation The Ocean Cleanup som samarbejdspartner,
+                fordi deres arbejde er konkret, målbart og visionært. De udvikler avanceret teknologi til at
+                fjerne plastik fra verdenshavene – og gør det i stor skala.
+            </p>
     </section>
 
     <!-- Visual break 1: Image + Fact -->
     <div class="fact-row">
-        <img src="plasticbagearth.jpg" alt="Plastic representing Earth" class="fact-image">
+        <div class="image-crop-container">
+            <img src="plasticbagearth.jpg" alt="Plastic representing Earth" class="fact-image" />
+        </div>
         <div class="fact-text">
             <p class="big-label"><strong><em>Vidste du at...</em></strong></p>
             <p class="fact-detail">
-                Danmark er et af de lande, der bruger flest biologiske ressourcer, og at Jorden ikke ville kunne støtte menneskeracen, hvis alle levede som os? <br>
-                <span class="reference">Kilde: Overshoot Day</span>
+                Danmark er et af de lande, der bruger flest biologiske ressourcer...
+                <br><span class="reference">Kilde: Overshoot Day</span>
             </p>
         </div>
     </div>
 
 
+
     <!-- Quote section -->
     <blockquote class="quote-section">
-        <p><em>"“...både glas, pap, papir og metal er lettere at genanvende end plastik...” <span class="reference">Kilde: Plastic Change</span></em></p>
+        <p><em>"...både glas, pap, papir og metal er lettere at genanvende end plastik...” <span class="reference">Kilde: Plastic Change</span></em></p>
     </blockquote>
 
     <!-- Visual break 2: Two images with captions -->
     <div class="image-caption-row">
         <div class="image-caption-pair">
-            <p class="small-label">Kun 23% af Danmarks plastik bliver genanvendt <br>
-                                   (ikke det samme som genbrugt - der mangler info på <br>
+            <p class="small-label">Kun 23% af Danmarks plastik bliver genanvendt
+                                   (ikke det samme som genbrugt - der mangler info på
                                     dette) <span class="reference">Kilde: Miljøministeriet, statistik 2021</span>
             </p>
             <img src="plasticplant.png" alt="Plastic sorting plant" class="plasticplant">
         </div>
         <div class="image-caption-pair">
-            <p class="small-label">"Det meste sendes til Tyskland, hvorfra<br>
-                                    vi ingen kontrol eller viden har om dets <br>
+            <p class="small-label">"Det meste sendes til Tyskland, hvorfra
+                                    vi ingen kontrol eller viden har om dets
                                     videre færden" <span class="reference">Kilde: Plastic Change</span></p>
-            <img src="oceanwaste.png" alt="Man cleaning plastic from sea" class="mancleaningplastic">
+            <img src="plasticinwater.jpg" alt="Plastic in water" class="plasticinwater">
         </div>
     </div>
 
@@ -85,6 +92,6 @@
     </section>
 
 </main>
-
+<script src="status.js"></script>
 </body>
 </html>

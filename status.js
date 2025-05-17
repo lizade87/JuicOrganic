@@ -29,3 +29,10 @@ function animateCounters(cartonStart, cartonEnd, duration) {
 window.addEventListener("DOMContentLoaded", () => {
     animateCounters(0, 1234, 3000); // from 0 to 1234 in 3 seconds
 });
+
+    const burger = document.querySelector(".burger");
+    const navLinks = document.querySelector(".nav-links");
+
+    burger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+});
