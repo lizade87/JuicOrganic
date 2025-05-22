@@ -30,7 +30,10 @@ body {
 .logo {
     margin-right: 4rem; /* space between logo and nav links */
 }
-
+.logo img a:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
 .logo img {
     height: 3rem; /* scalable logo size */
     width: auto;
@@ -48,7 +51,7 @@ body {
 .navbar a {
     color: black;
     text-decoration: none;
-    font-family: "Inter", sans-serif;
+    font-family: "Jua";
     text-transform: uppercase;
     font-size: 1.1rem;
     font-weight: bold;
@@ -67,29 +70,47 @@ body {
     border-radius: 4px; /* Optional: rounds the corners */
 }
 .navbar a:hover {
-    color: brown;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+h1 {
+    color:black;
+    font-family: "Jua";
+    font-size: 3em;
 }
 
 
-.brandconcept h1 {
-    color:#000;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 2.5rem;
-    text-shadow:
-            -0.1rem -0.1rem 0 #FAB27B,
-            0.1rem -0.1rem 0 #FAB27B,
-            -0.1rem  0.1rem 0 #FAB27B,
-            0.1rem  0.1rem 0 #FAB27B,
-            -0.2rem -0.2rem 0 #FAB27B,
-            0.2rem -0.2rem 0 #FAB27B,
-            -0.2rem  0.2rem 0 #FAB27B,
-            0.2rem  0.2rem 0 #FAB27B,
-            -0.3rem  0rem    0 #FAB27B,
-            0.3rem  0rem    0 #FAB27B,
-            0rem   -0.3rem  0 #FAB27B,
-            0rem    0.3rem  0 #FAB27B;"
+.brandconcept {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 3rem 1rem;
+}
 
+.motto {
+    max-width: 700px;
+    font-family: "Jua";
+    color: black;
+    flex: 1;
+    line-height: 4rem;
+    rotate: -8.5deg;
+}
+
+.kartoner {
+    max-width: 470px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.kartoner img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .text-row {
@@ -97,96 +118,124 @@ body {
     justify-content: center;
     color: black;
     text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-size: 1.1rem;
+    font-family: "Jua";
     font-weight: bold;
+    margin-right: 0.55rem;
 }
 
 .drikkevalg {
     list-style: none;
     display: flex;
-    gap: 5rem;
+    gap: 4.2rem;
     padding: 0;
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: bolder;
     text-transform: uppercase;
-    text-shadow:
-            -0.1rem -0.1rem 0 #FAB27B,
-            0.1rem -0.1rem 0 #FAB27B,
-            -0.1rem  0.1rem 0 #FAB27B,
-            0.1rem  0.1rem 0 #FAB27B,
-            -0.2rem -0.2rem 0 #FAB27B,
-            0.2rem -0.2rem 0 #FAB27B,
-            -0.2rem  0.2rem 0 #FAB27B,
-            0.2rem  0.2rem 0 #FAB27B,
-            -0.3rem  0rem    0 #FAB27B,
-            0.3rem  0rem    0 #FAB27B,
-            0rem   -0.3rem  0 #FAB27B,
-            0rem    0.3rem  0 #FAB27B;
     }
 
-.kartoner {
-    display: flex;
-    justify-content: center; /* horizontal centering */
-    align-items: center;     /* vertical centering (optional) */
-    padding:0;
-    margin: 0;
+
+h2 {
+    font-family: "Jua";
+    font-size: 2.5em;
 }
 
-p {
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    margin:2rem auto;
-    text-align: left;
-    max-width: 50rem;
+.Omos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 3rem 1rem 3rem 2rem;
 }
-.whyus h1 {
-    font-family: "Inter", sans-serif;
-    color:#ff9645;
+
+.Omtekst {
+    max-width: 500px;
+    font-family: "Instrument sans", sans-serif;
+    color: #333;
+    flex: 1;
+    line-height: 2rem;
+}
+
+.Ompic {
+    max-width: 420px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 1.9rem;
+}
+
+.Ompic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.9rem;
+}
+
+.whyus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin: 6rem auto;
+    max-width: 1200px;
+    padding: 3rem 1rem 3rem 2rem;
+    line-height: 2rem;
+}
+.whytext {
+    max-width: 500px;
+    font-family: "Instrument sans", sans-serif;
+    color: #333;
+    flex: 1;
+    line-height: 2rem;
+}
+
+.whypic {
+    max-width: 420px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.whypic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.9rem;
+}
+.cta-text {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 2.5rem;
-    text-shadow:
-            -0.1rem -0.1rem 0 black,
-            0.1rem -0.1rem 0 black,
-            -0.1rem  0.1rem 0 black,
-            0.1rem  0.1rem 0 black,
-            -0.2rem -0.2rem 0 black,
-            0.2rem -0.2rem 0 black,
-            -0.2rem  0.2rem 0 black,
-            0.2rem  0.2rem 0 black,
-            -0.3rem  0rem    0 black,
-            0.3rem  0rem    0 black,
-            0rem   -0.3rem  0 black,
-            0rem    0.3rem  0 black;
+    font-family: "Jua";
 }
-.whyus p{
-    font-size: 1.6rem;
-    max-width: 50rem;
+
+h2.cta-text {
+    margin-top:4rem;
+    margin-bottom: 3rem;
 }
+
 .mission-button {
     display: inline-block;
     padding: 1rem 1.4rem;
-    background-color: #b0f820;
-    color: black;
-    font-family: "Inter", sans-serif;
-    font-size: 1.9rem;
+    background-color: #086408;
+    color: white;
+    font-family: "Jua";
+    font-size: 1.6rem;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-
-    border: 0.3rem solid #086408;
-    border-radius: 1.2rem;
+    border-radius: 1.9rem;
 }
 
 .mission-button:hover {
-    background-color:#086408;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
 }
-.mission-link a:hover {
-    color: white;
-}
+
 .mission-link {
     display: flex;
     justify-content: center;
@@ -208,30 +257,51 @@ p {
     padding: 0;
 }
 
-.footer-content a{
-    color: black;
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
+.footer-links img {
+    max-width: 2rem;
+}
+.footer-links .ig {
+    max-width: 3.5rem;
 }
 
-.footer-content a:hover {
-    color: deeppink;
+.footer-links img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
 }
-
 @media (max-width: 768px) {
+    /* Logo */
+    .logo {
+        margin: 2rem 0rem 0rem 2rem;
+        display: flex;
+        justify-content: left;
+        max-width: 60%;
+    }
 
-.logo {
-    margin: 2rem 0rem 0rem 2rem; /* center logo and add spacing below if needed */
-    display: flex;
-    justify-content: left;
-}
+    .logo img {
+        height: 2rem;
+        margin: 0;
+    }
 
-.logo img {
-    height: 2rem; /* slightly smaller logo on mobile */
-    margin:0;
-}
+    /* Burger Menu */
+    .burger {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        z-index: 2;
+    }
+
+    /* Navigation */
+    .logo {
+        margin: 2rem 0rem 0rem 2rem; /* center logo and add spacing below if needed */
+        display: flex;
+        justify-content: left;
+    }
+
+    .logo img {
+        height: 2rem; /* slightly smaller logo on mobile */
+        margin:0;
+    }
 
     .burger {
         display: block;
@@ -294,65 +364,129 @@ p {
         border: none !important;
     }
 
-    .icon {
-        width: 30vw;
+    /* General Text */
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
     }
 
     h2 {
         font-size: 1.2rem;
         text-align: center;
     }
-    .whyus p {
-        font-size: 1rem;
-    }
-
-    .whyus h1 {
-        font-size: 1.2rem;
-    }
 
     p {
-        font-size: 0.8rem;
-        margin:1rem;
+        font-size: 0.9rem;
+        margin: 1rem;
     }
 
-    .text-row {
+    /* Layout: Brand Concept */
+    .brandconcept {
         flex-direction: column;
-        align-items: center; /* optional: centers the text items */
-    }
-
-    .drikkevalg {
-        flex-direction: row;
-        gap: 1.5rem; /* adjust gap for vertical spacing */
-        align-items: center; /* optional */
-        font-size: 0.8rem;
+        align-items: center;
+        text-align: center;
+        margin:0rem;
+        padding:0rem 1rem;
+        gap:1rem;
     }
 
     .brandconcept h1 {
-        font-size:1.2rem;
+        font-size: 1.2rem;
     }
 
+    .motto {
+        font-size: 1.5em;
+        transform: none;
+        line-height: 1.5rem;
+    }
+
+    /* Layout: Text Row */
+    .text-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Layout: Drink Choices */
+    .drikkevalg {
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    /* Kartoner Section */
     .kartoner img {
         max-width: 80%;
     }
 
-    .logo{
-        max-width:60%;
+    .kartoner {
+        display: flex;
+        justify-content: center;
     }
+
+    /* Mission Section */
     .mission-intro {
         margin: 0 1rem;
     }
 
     .mission-link {
-        transform: scale(0.6); /* scales it to 60% */
-        transform-origin: top left; /* adjust origin if needed */
-        justify-content: center;
+        transform: scale(0.6);
         transform-origin: top center;
+        justify-content: center;
         margin-bottom: 0;
-            }
+    }
+.Omos {
+    flex-direction: column;
+    margin:0rem;
+    padding: 1.5rem 1rem;
+    gap:2rem;
+}
+.Omtekst {
+    line-height: 1.5rem;
+}
 
+    .Ompic {
+        width: 90%;
+        height: auto;
+        display: block;
+        border-radius: 1.9rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Icon */
+    .icon {
+        width: 30vw;
+    }
+    .whyus {
+        flex-direction: column;
+        padding:1rem;
+        margin:0rem;
+        gap:2rem;
+    }
+    /* Why Us Section */
+    .whyus h1 {
+        font-size: 1.2rem;
+    }
+
+    .whypic {
+        width: 90%;
+        height: auto;
+        display: block;
+        border-radius: 1.9rem;
+        margin: 0 auto;
+    }
+
+    .whytext {
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* Footer */
     .footer-content {
-        padding-bottom: 1.5rem;
         padding-top: 0;
+        padding-bottom: 1.5rem;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -360,7 +494,7 @@ p {
 
     .footer-links {
         display: flex;
-        flex-wrap: nowrap;      /* Prevent breaking onto multiple lines */
+        flex-wrap: nowrap;
         gap: 2rem;
         list-style: none;
         padding: 0;
@@ -371,7 +505,7 @@ p {
     .footer-links li {
         display: flex;
         align-items: center;
-        white-space: nowrap;    /* Prevent text wrapping */
+        white-space: nowrap;
     }
 
     .footer-links a {
@@ -384,9 +518,28 @@ p {
         white-space: nowrap;
     }
 
-    footer {
-        margin: 0;
-        overflow-x: auto; /* Optional: avoids breaking layout on small screens */
+    h2.cta-text {
+        font-size: 1.1rem;
+        margin:2rem 2rem 0rem 1rem;
     }
 
+    .footer-content {
+        display: flex;
+        justify-content: center; /* horizontal centering */
+        align-items: center;     /* vertical centering */
+        height: 50px;           /* or whatever height your footer needs */
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 1rem; /* space between icons */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .footer-links img {
+        width: 30px;  /* scale uniformly */
+        height: auto;
+    }
 }
